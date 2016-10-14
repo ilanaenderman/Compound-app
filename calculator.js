@@ -19,10 +19,11 @@ var prettyNumber = (number) =>{
 //=> is same as writing functions
 
 fs.readFile( __dirname + '/customers.json', 'utf-8', ( err, data ) => {
+	
 	//parse the file to a readable object
 	let parsedData = JSON.parse( data )
-	calcCompound( parsedData )
-	
+	for( var i = 0 ; i < parsedData.length ; i++)
+	calcCompound( parsedData[i] )
 } )
 
 //Old syntacs
