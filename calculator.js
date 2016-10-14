@@ -1,10 +1,7 @@
 'use strict'
 // importing necessary modules
 const fs = require('fs')  //you can reed const as var
-var counter = require(__dirname + '/calculator')
 
-
-/*
 // Helper functions
 var roundDecimal = ( number ) => {
 	return Math.round(number * 100) / 100
@@ -18,20 +15,16 @@ var prettyNumber = (number) =>{
 	return addCommas(roundDecimal(number))
 }
 
-
 // read the costumer data json
 //=> is same as writing functions
 
-fs.readFile( __dirname + '/costumer.json', 'utf-8', ( err, data ) => {
+fs.readFile( __dirname + '/customer.json', 'utf-8', ( err, data ) => {
 	//parse the file to a readable object
 	let parsedData = JSON.parse( data )
 	calcCompound( parsedData )
 	
 } )
 
-
-
-/*
 //Old syntacs
 //fs.readFile(__dirname + '/costumer.json', 'utf-8', function(err, data){
 //} )
@@ -63,14 +56,16 @@ var calcCompound = ( customer  ) => {
 	}
 
 	//output our data
-	console.log( "welcom " + customer.name + " to our advanced pension planner!")
+	console.log( "Welcom " + customer.name + " to our advanced pension planner!")
 	console.log( "You are starting with " + customer.finances.startcapital + " and add a monthly amount of " + customer.finances.monthlyadd)
 	console.log( "When you retire ate age " + customer.pension.age + " you will have the following:")
 
 	//output calculation stuf
 	console.log( "In a pessimistic scenario: €" + 	prettyNumber(customer.pension.endamount.pessimistic) )
 	console.log( "In an average scenario: €" 	+ 	prettyNumber(customer.pension.endamount.average) )
-	console.log( "In a optimistic scenario: €" 	+ 	prettyNumber(customer.pension.endamount.optimistic) )
+	console.log( "In an optimistic scenario: €" 	+ 	prettyNumber(customer.pension.endamount.optimistic) )
 	}
 
-	*/
+module.exports = fs.readFile
+
+
