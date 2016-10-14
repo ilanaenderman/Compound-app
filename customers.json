@@ -1,0 +1,44 @@
+[{"name": "Ilana",
+	"age": 26,
+	"finances": {
+		"startcapital": 1000,
+		"monthlyadd": 100
+	},
+	"pension": {
+		"age": 65,
+		"interest":{
+			"pessimistic": 1.02,
+			"average": 1.04,
+			"optimistic": 1.08
+		}
+	}},
+
+{"name": "Yara",
+	"age": 21,
+	"finances": {
+		"startcapital": 1000,
+		"monthlyadd": 100
+	},
+	"pension": {
+		"age": 65,
+		"interest":{
+			"pessimistic": 1.02,
+			"average": 1.04,
+			"optimistic": 1.08
+		}
+	}},
+	
+{"name": "Florian",
+	"age": 28,
+	"finances": {
+		"startcapital": 1000,
+		"monthlyadd": 100
+	},
+	"pension": {
+		"age": 65,
+		"interest":{
+			"pessimistic": 1.02,
+			"average": 1.04,
+			"optimistic": 1.08
+		}
+	}}]

@@ -18,7 +18,7 @@ var prettyNumber = (number) =>{
 // read the costumer data json
 //=> is same as writing functions
 
-fs.readFile( __dirname + '/customer.json', 'utf-8', ( err, data ) => {
+fs.readFile( __dirname + '/customers.json', 'utf-8', ( err, data ) => {
 	//parse the file to a readable object
 	let parsedData = JSON.parse( data )
 	calcCompound( parsedData )
