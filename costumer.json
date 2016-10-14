@@ -3,7 +3,7 @@
 	"age": 26,
 	"finances": {
 		"startcapital": 1000,
-		"monthlyadd": 100
+		"monthlyadd": 1000
 	},
 	"pension": {
 		"age": 65,
